@@ -1,0 +1,113 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+#############################################################################
+#              $$$ Enjoy the pure-MATLAB Toolbox <pop-lso> $$$              #
+#                        --- version: 1.00.000.1 ---                        #
+#############################################################################
+funcDim - 1 : runtime - 1.08594e-01.
+funcDim - 2 : runtime - 2.74680e-02.
+funcDim - 3 : runtime - 2.19400e-02.
+funcDim - 4 : runtime - 1.97340e-02.
+funcDim - 5 : runtime - 8.15200e-03.
+funcDim - 6 : runtime - 2.07000e-03.
+funcDim - 7 : runtime - 1.76000e-03.
+funcDim - 8 : runtime - 2.37000e-03.
+funcDim - 9 : runtime - 1.69300e-03.
+funcDim - 10 : runtime - 1.64300e-03.
+funcDim - 11 : runtime - 1.66500e-03.
+funcDim - 12 : runtime - 1.69900e-03.
+funcDim - 13 : runtime - 1.74200e-03.
+funcDim - 14 : runtime - 1.81500e-03.
+funcDim - 15 : runtime - 1.83400e-03.
+funcDim - 16 : runtime - 1.84500e-03.
+funcDim - 17 : runtime - 1.92500e-03.
+funcDim - 18 : runtime - 2.01700e-03.
+funcDim - 19 : runtime - 2.29100e-03.
+funcDim - 20 : runtime - 2.23600e-03.
+funcDim - 21 : runtime - 2.24900e-03.
+funcDim - 22 : runtime - 2.35700e-03.
+funcDim - 23 : runtime - 2.47200e-03.
+funcDim - 24 : runtime - 2.53700e-03.
+funcDim - 25 : runtime - 2.63000e-03.
+funcDim - 26 : runtime - 2.69700e-03.
+funcDim - 27 : runtime - 2.78200e-03.
+funcDim - 28 : runtime - 2.90300e-03.
+funcDim - 29 : runtime - 2.97900e-03.
+funcDim - 30 : runtime - 3.05800e-03.
+funcDim - 31 : runtime - 3.15400e-03.
+funcDim - 32 : runtime - 2.74900e-03.
+funcDim - 33 : runtime - 2.54900e-03.
+funcDim - 34 : runtime - 2.65600e-03.
+funcDim - 35 : runtime - 2.73100e-03.
+funcDim - 36 : runtime - 2.85700e-03.
+funcDim - 37 : runtime - 3.00900e-03.
+funcDim - 38 : runtime - 3.06500e-03.
+funcDim - 39 : runtime - 3.23300e-03.
+funcDim - 40 : runtime - 3.25400e-03.
+funcDim - 41 : runtime - 3.42200e-03.
+funcDim - 42 : runtime - 3.57900e-03.
+funcDim - 43 : runtime - 3.76500e-03.
+funcDim - 44 : runtime - 3.88700e-03.
+funcDim - 45 : runtime - 4.06800e-03.
+funcDim - 46 : runtime - 4.21400e-03.
+funcDim - 47 : runtime - 4.28000e-03.
+funcDim - 48 : runtime - 4.47400e-03.
+funcDim - 49 : runtime - 4.65700e-03.
+funcDim - 50 : runtime - 4.89600e-03.
+funcDim - 51 : runtime - 4.98200e-03.
+funcDim - 52 : runtime - 5.08800e-03.
+funcDim - 53 : runtime - 5.25400e-03.
+funcDim - 54 : runtime - 5.51400e-03.
+funcDim - 55 : runtime - 5.57500e-03.
+funcDim - 56 : runtime - 5.82200e-03.
+funcDim - 57 : runtime - 5.93700e-03.
+funcDim - 58 : runtime - 6.21200e-03.
+funcDim - 59 : runtime - 6.26300e-03.
+funcDim - 60 : runtime - 6.43900e-03.
+funcDim - 61 : runtime - 6.92100e-03.
+funcDim - 62 : runtime - 7.00400e-03.
+funcDim - 63 : runtime - 7.57000e-03.
+funcDim - 64 : runtime - 7.46200e-03.
+funcDim - 65 : runtime - 7.62500e-03.
+funcDim - 66 : runtime - 7.68000e-03.
+funcDim - 67 : runtime - 8.08700e-03.
+funcDim - 68 : runtime - 8.05900e-03.
+funcDim - 69 : runtime - 8.28600e-03.
+funcDim - 70 : runtime - 8.55100e-03.
+funcDim - 71 : runtime - 8.98800e-03.
+funcDim - 72 : runtime - 9.00400e-03.
+funcDim - 73 : runtime - 9.37700e-03.
+funcDim - 74 : runtime - 9.44800e-03.
+funcDim - 75 : runtime - 1.00240e-02.
+funcDim - 76 : runtime - 9.92500e-03.
+funcDim - 77 : runtime - 1.03330e-02.
+funcDim - 78 : runtime - 1.13310e-02.
+funcDim - 79 : runtime - 1.10110e-02.
+funcDim - 80 : runtime - 1.11550e-02.
+funcDim - 81 : runtime - 1.12190e-02.
+funcDim - 82 : runtime - 1.13570e-02.
+funcDim - 83 : runtime - 1.19520e-02.
+funcDim - 84 : runtime - 1.22350e-02.
+funcDim - 85 : runtime - 1.24560e-02.
+funcDim - 86 : runtime - 1.27270e-02.
+funcDim - 87 : runtime - 1.38990e-02.
+funcDim - 88 : runtime - 1.33830e-02.
+funcDim - 89 : runtime - 1.36420e-02.
+funcDim - 90 : runtime - 1.39680e-02.
+funcDim - 91 : runtime - 1.43600e-02.
+funcDim - 92 : runtime - 1.42990e-02.
+funcDim - 93 : runtime - 1.46670e-02.
+funcDim - 94 : runtime - 1.49100e-02.
+funcDim - 95 : runtime - 1.55360e-02.
+funcDim - 96 : runtime - 1.57160e-02.
+funcDim - 97 : runtime - 1.59790e-02.
+funcDim - 98 : runtime - 1.62820e-02.
+funcDim - 99 : runtime - 1.65770e-02.
+funcDim - 100 : runtime - 1.66950e-02.
+funcDim - 1000 : runtime - 2.64026e+00.
+funcDim - 10000 : runtime - 3.12469e+03.
+$ - runtime - $: 3.12829e+03 seconds.
