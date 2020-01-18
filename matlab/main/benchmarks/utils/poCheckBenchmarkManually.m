@@ -36,7 +36,13 @@ if nargin < 5
 end
 
 if isShifted
-    funcName = [name(1 : 2) name(10 : end)]; % delete `shifted`
+    if strcmp(name(1 : 9), 'poShifted')
+        funcName = [name(1 : 2) name(10 : end)]; % delete `Shifted`
+    elseif strcmp(name(1 : 16), 'poRotatedShifted')
+        funcName = [name(1 : 2) name(17 : end)]; % delete `RotatedShifted`
+    else
+        error('support only two refixes: `poShifted` and `poRotatedShifted`');
+    end
     poShiftVector = poLoadShiftVector(funcName, funcDim); % [funcDim, 1]
     poShiftVector = repmat(poShiftVector, 1, popSize); % [funcDim, popSize]
     X = X + poShiftVector; % + rather than -
