@@ -18,4 +18,4 @@ for i = 1 : numel(funcDims)
     poGenerateRotationMatrix(problemParameters);
     fprintf('funcDim - %d : runtime - %7.5e.\n', funcDim, toc(startFuncDim));
 end
-fprintf('$ - runtime - $: %7.5e seconds.', toc(startRun));
+fprintf('$ - runtime - $: %7.5e seconds.\n', toc(startRun));
