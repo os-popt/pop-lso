@@ -24,7 +24,13 @@ functions = {name, ... % accept the funcDim-by-popSize matrix as input
 
 numSamping = 200;
 for s = 1 : numSamping
-    X = unifrnd(-5, 5, randi(100, [1 2]));
+    if s < 199
+        X = unifrnd(-5, 5, randi(100, [1 2]));
+    elseif s == 199
+        X = unifrnd(-5, 5, [1e3, randi(1000)]);
+    elseif s == 200
+        X = unifrnd(-5, 5, [1e4, randi(1000)]);
+    end
     [~, popSize] = size(X);
     y = feval(name, X);
     for fi = 2 : length(functions)

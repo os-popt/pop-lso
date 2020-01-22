@@ -49,4 +49,4 @@ toc;
 % poShiftedEllipsoid : NOT pass the manual checking within the tolerance `1.00e-01`.
 % poShiftedEllipsoid : NOT pass the manual checking within the tolerance `1.00e-01`.
 % poShiftedEllipsoid : pass the manual checking within the tolerance `1.00e-06`.
-% poShiftedEllipsoid : pass the automatic checking within the tolerance `1.00e-06`.
+% poShiftedEllipsoid : pass the automatic checking within the tolerance `1.00e-03`.
