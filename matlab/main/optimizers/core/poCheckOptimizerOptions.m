@@ -29,11 +29,10 @@ end
 % maximumRuntime
 if ~isfield(optimizerOptions, 'maximumRuntime')
     optimizerOptions.maximumRuntime = Inf;
-else
-    maximumRuntime = optimizerOptions.maximumRuntime;
-    if ~poIsPositiveIntegerScalar(maximumRuntime)
-        error('`maximumRuntime` should be a positive integer scalar.');
-    end
+end
+maximumRuntime = optimizerOptions.maximumRuntime;
+if ~poIsPositiveIntegerScalar(maximumRuntime) && ~isinf(maximumRuntime)
+    error('`maximumRuntime` should be a positive integer scalar.');
 end
 
 % thresholdFitness
