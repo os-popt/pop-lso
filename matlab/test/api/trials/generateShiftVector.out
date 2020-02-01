@@ -1,0 +1,65 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+#############################################################################
+#              $$$ Enjoy the pure-MATLAB Toolbox <pop-lso> $$$              #
+#                        --- version: 1.00.000.1 ---                        #
+#############################################################################
+******* poSphere :
+  | D2 : runtime 3.43410e-02.
+  | D10 : runtime 7.36300e-03.
+  | D100 : runtime 8.93200e-03.
+  | D1000 : runtime 1.27480e-02.
+  | D10000 : runtime 1.71210e-02.
+******* poRosenbrock :
+  | D2 : runtime 1.33500e-03.
+  | D10 : runtime 1.34800e-03.
+  | D100 : runtime 4.33600e-03.
+  | D1000 : runtime 3.23800e-03.
+  | D10000 : runtime 1.21980e-02.
+******* poSchwefel221 :
+  | D2 : runtime 1.83100e-03.
+  | D10 : runtime 1.73800e-03.
+  | D100 : runtime 1.78800e-03.
+  | D1000 : runtime 2.65900e-03.
+  | D10000 : runtime 1.06860e-02.
+******* poEllipsoid :
+  | D2 : runtime 1.56300e-03.
+  | D10 : runtime 1.61600e-03.
+  | D100 : runtime 1.62700e-03.
+  | D1000 : runtime 2.33600e-03.
+  | D10000 : runtime 9.61100e-03.
+******* poCigar :
+  | D2 : runtime 1.42300e-03.
+  | D10 : runtime 1.41400e-03.
+  | D100 : runtime 1.45700e-03.
+  | D1000 : runtime 2.15000e-03.
+  | D10000 : runtime 8.74900e-03.
+******* poDiscus :
+  | D2 : runtime 1.30100e-03.
+  | D10 : runtime 1.24400e-03.
+  | D100 : runtime 1.31400e-03.
+  | D1000 : runtime 1.95200e-03.
+  | D10000 : runtime 8.23800e-03.
+******* poAckley :
+  | D2 : runtime 1.18900e-03.
+  | D10 : runtime 1.19900e-03.
+  | D100 : runtime 1.24900e-03.
+  | D1000 : runtime 1.87100e-03.
+  | D10000 : runtime 7.73100e-03.
+******* poGriewank :
+  | D2 : runtime 1.14200e-03.
+  | D10 : runtime 1.14600e-03.
+  | D100 : runtime 1.22400e-03.
+  | D1000 : runtime 1.74600e-03.
+  | D10000 : runtime 7.30400e-03.
+******* poRastrigin :
+  | D2 : runtime 1.11600e-03.
+  | D10 : runtime 1.09200e-03.
+  | D100 : runtime 1.13100e-03.
+  | D1000 : runtime 1.66900e-03.
+  | D10000 : runtime 7.02800e-03.
+$ - runtime - $: 3.31582e-01 seconds.
