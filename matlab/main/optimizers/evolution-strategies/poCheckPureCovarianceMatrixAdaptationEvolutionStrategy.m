@@ -43,8 +43,8 @@ if ~isfield(optimizerOptions, 'populationSize')
     optimizerOptions.populationSize = 4 + floor(3 * log(dimension));
 end
 populationSize = optimizerOptions.populationSize;
-if ~poIsPositiveIntegerScalar(populationSize)
-    error('`populationSize` should be a positive integer scalar.');
+if ~poIsPositiveIntegerScalar(populationSize) || (populationSize < 4)
+    error('`populationSize` should be a positive integer scalar (>=4).');
 end
 
 % stepSize

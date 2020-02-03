@@ -61,11 +61,19 @@ disp(C);
 disp(timeEig); % 0
 disp(numberEig); % 0
 
-%% `populationSize` should be a positive integer scalar.
+%% `populationSize` should be a positive integer scalar (>=4).
 problemParameters = poSetProblemParameters('poSphere', 2, 5);
 optimizerOptions = struct();
 optimizerOptions.maximumEvaluations = 2e5;
 optimizerOptions.populationSize = 0;
+poCheckPureCovarianceMatrixAdaptationEvolutionStrategy(...
+    problemParameters, optimizerOptions);
+
+%% `populationSize` should be a positive integer scalar (>=4).
+problemParameters = poSetProblemParameters('poSphere', 2, 5);
+optimizerOptions = struct();
+optimizerOptions.maximumEvaluations = 2e5;
+optimizerOptions.populationSize = 3;
 poCheckPureCovarianceMatrixAdaptationEvolutionStrategy(...
     problemParameters, optimizerOptions);
 
