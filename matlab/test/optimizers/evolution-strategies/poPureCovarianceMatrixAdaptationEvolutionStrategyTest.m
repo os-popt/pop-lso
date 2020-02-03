@@ -3,12 +3,12 @@ clear; clc;
 %%
 rng(202001);
 problemParameters = poSetProblemParameters('poSphere', 10, 10);
-algoOptions = struct();
-algoOptions.seedPopulation = 1;
-algoOptions.maximumEvaluations = 1e5 * problemParameters.dimension;
-algoOptions.maximumRuntime = 60 * problemParameters.dimension; % seconds
-algoOptions.thresholdFitness = 1e-10;
-searchResults = poPureCovarianceMatrixAdaptationEvolutionStrategy(problemParameters, algoOptions);
+optimizerOptions = struct();
+optimizerOptions.seedPopulation = 1;
+optimizerOptions.maximumEvaluations = 1e5 * problemParameters.dimension;
+optimizerOptions.maximumRuntime = 60 * problemParameters.dimension; % seconds
+optimizerOptions.thresholdFitness = 1e-10;
+searchResults = poPureCovarianceMatrixAdaptationEvolutionStrategy(problemParameters, optimizerOptions);
 disp(searchResults);
 %        optimalFitness: 8.8403e-11
 %     numberEvaluations: 2591
@@ -19,12 +19,12 @@ disp(searchResults);
 %%
 rng(202002);
 problemParameters = poSetProblemParameters('poEllipsoid', 10, 10);
-algoOptions = struct();
-algoOptions.seedPopulation = 2;
-algoOptions.maximumEvaluations = 1e5 * problemParameters.dimension;
-algoOptions.maximumRuntime = 60 * problemParameters.dimension; % seconds
-algoOptions.thresholdFitness = 1e-10;
-searchResults = poPureCovarianceMatrixAdaptationEvolutionStrategy(problemParameters, algoOptions);
+optimizerOptions = struct();
+optimizerOptions.seedPopulation = 2;
+optimizerOptions.maximumEvaluations = 1e5 * problemParameters.dimension;
+optimizerOptions.maximumRuntime = 60 * problemParameters.dimension; % seconds
+optimizerOptions.thresholdFitness = 1e-10;
+searchResults = poPureCovarianceMatrixAdaptationEvolutionStrategy(problemParameters, optimizerOptions);
 disp(searchResults);
 %        optimalFitness: 7.9224e-11
 %     numberEvaluations: 6711
@@ -35,12 +35,12 @@ disp(searchResults);
 %%
 rng(202003);
 problemParameters = poSetProblemParameters('poRosenbrock', 10, 10);
-algoOptions = struct();
-algoOptions.seedPopulation = 3;
-algoOptions.maximumEvaluations = 1e5 * problemParameters.dimension;
-algoOptions.maximumRuntime = 60 * problemParameters.dimension; % seconds
-algoOptions.thresholdFitness = 1e-10;
-searchResults = poPureCovarianceMatrixAdaptationEvolutionStrategy(problemParameters, algoOptions);
+optimizerOptions = struct();
+optimizerOptions.seedPopulation = 3;
+optimizerOptions.maximumEvaluations = 1e5 * problemParameters.dimension;
+optimizerOptions.maximumRuntime = 60 * problemParameters.dimension; % seconds
+optimizerOptions.thresholdFitness = 1e-10;
+searchResults = poPureCovarianceMatrixAdaptationEvolutionStrategy(problemParameters, optimizerOptions);
 disp(searchResults);
 %        optimalFitness: 8.4431e-11
 %     numberEvaluations: 5911
