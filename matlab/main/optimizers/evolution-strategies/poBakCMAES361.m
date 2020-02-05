@@ -163,7 +163,7 @@ function [xmin, ...      % minimum search point of last iteration
 %   passes two additional parameters to the function MYFUN2.
 %
 % See also FMINSEARCH, FMINUNC, FMINBND.
-
+startTime = tic;
 
 % TODO: 
 %       write dispcmaesdat for Matlab (and Octave)
@@ -740,6 +740,10 @@ end;
 % -------------------- Generation Loop --------------------------------
 stopflag = {};
 while isempty(stopflag)
+    
+    if toc(startTime) >= inopts.maximumRuntime
+        break;
+    end
     
     if ((inopts.outfile > 0) && (rem(countiter,100) == 0) || (countiter < 100))
         % fprintf(inopts.outfile,'%g %g\n',counteval,out.solutions.bestever.f);
@@ -1757,7 +1761,8 @@ end
   if any(strcmp(stopflag, 'fitness')) ...
 	|| any(strcmp(stopflag, 'maxfunevals')) ...
 	|| any(strcmp(stopflag, 'stoptoresume')) ...
-	|| any(strcmp(stopflag, 'manual'))
+	|| any(strcmp(stopflag, 'manual')) ...
+    || (toc(startTime) >= inopts.maximumRuntime)
     break; 
   end
 end % while irun <= Restarts
