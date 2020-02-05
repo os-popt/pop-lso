@@ -754,7 +754,7 @@ stopflag = {};
 while isempty(stopflag)
     
     if ((inopts.outfile > 0) && (rem(countiter,100) == 0) || (countiter < 100))
-        fprintf(inopts.outfile,'%g %g\n',counteval,out.solutions.bestever.f);
+        % fprintf(inopts.outfile,'%g %g\n',counteval,out.solutions.bestever.f);
 	end;  
   
   % set internal parameters
