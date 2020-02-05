@@ -164,6 +164,8 @@ function [xmin, ...      % minimum search point of last iteration
 %
 % See also FMINSEARCH, FMINUNC, FMINBND.
 startTime = tic;
+timeEvaluations = 0;
+evaluations = [];
 
 % TODO: 
 %       write dispcmaesdat for Matlab (and Octave)
@@ -639,7 +641,10 @@ else % flgresume
     bestever = out.solutions.bestever;
   end
   if myevalbool(opts.EvalInitialX)
-    fitness.hist(1)=feval(fitfun, xmean, varargin{:}); 
+    startEvaluations = tic;
+    fitness.hist(1)=feval(fitfun, xmean, varargin{:});
+    timeEvaluations = timeEvaluations + toc(startEvaluations);
+    evaluations = cat(2, evaluations, fitness.hist(1));
     fitness.histsel(1)=fitness.hist(1);
     counteval = counteval + 1;
     if fitness.hist(1) < out.solutions.bestever.f 
@@ -913,7 +918,10 @@ while isempty(stopflag)
       % You may handle constraints here.  You may copy and alter
       % (columns of) arxvalid(:,k) only for the evaluation of the
       % fitness function. arx and arxvalid should not be changed.
-      fitness.raw = feval(fitfun, arxvalid, varargin{:}); 
+      startEvaluations = tic;
+      fitness.raw = feval(fitfun, arxvalid, varargin{:});
+      timeEvaluations = timeEvaluations + toc(startEvaluations);
+      evaluations = cat(2, evaluations, fitness.raw);
       countevalNaN = countevalNaN + sum(isnan(fitness.raw));
       counteval = counteval + sum(~isnan(fitness.raw)); 
   end
@@ -956,7 +964,10 @@ while isempty(stopflag)
       % You may handle constraints here.  You may copy and alter
       % (columns of) arxvalid(:,k) only for the evaluation of the
       % fitness function. arx should not be changed.
+      startEvaluations = tic;
       fitness.raw(k) = feval(fitfun, arxvalid(:,k), varargin{:}); 
+      timeEvaluations = timeEvaluations + toc(startEvaluations);
+      evaluations = cat(2, evaluations, fitness.raw(k));
       tries = tries + 1;
       if isnan(fitness.raw(k))
 	countevalNaN = countevalNaN + 1;
@@ -1706,8 +1717,11 @@ end % while, end generation loop
 fmin = fitness.raw(1);
 xmin = arxvalid(:, fitness.idx(1)); % Return best point of last generation.
 if length(stopflag) > sum(strcmp(stopflag, 'stoptoresume')) % final stopping
+  startEvaluations = tic;
   out.solutions.mean.f = ...
       feval(fitfun, xintobounds(xmean, lbounds, ubounds), varargin{:});
+  timeEvaluations = timeEvaluations + toc(startEvaluations);
+  evaluations = cat(2, evaluations, out.solutions.mean.f);
   counteval = counteval + 1;
   out.solutions.mean.evals = counteval;
   if out.solutions.mean.f < fitness.raw(1)
@@ -1766,6 +1780,8 @@ end
     break; 
   end
 end % while irun <= Restarts
+bestever.timeEvaluations = timeEvaluations;
+bestever.evaluations = evaluations;
 
 % ---------------------------------------------------------------  
 % ---------------------------------------------------------------  
