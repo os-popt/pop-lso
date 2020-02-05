@@ -128,6 +128,10 @@ while numberEvaluations < (maximumEvaluations - 1) % a negligible inconsistency
         trackBD = numberEvaluations;
         startEig = tic;
         C = triu(C) + triu(C, 1)'; % enforce symmetry
+        if any(isnan(C(:))) || any(isinf(C(:)))
+            stoppingFlag = 'any(isnan(C(:))) || any(isinf(C(:)))';
+            break;
+        end
         [B, D] = eig(C);
         D = sqrt(diag(D)); % standard deviations
         ISC = B * diag(D .^ -1) * B';
