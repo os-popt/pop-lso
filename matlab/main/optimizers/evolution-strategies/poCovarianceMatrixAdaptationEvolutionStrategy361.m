@@ -61,7 +61,11 @@ searchResults.numberEvaluations = counteval;
 searchResults.numberIterations = NaN;
 searchResults.timeEvaluations= bestever.timeEvaluations;
 searchResults.evaluations = bestever.evaluations;
-searchResults.stoppingFlag = stopflag;
+if isempty(stopflag)
+    searchResults.stoppingFlag = 'maximumRuntime';
+else
+    searchResults.stoppingFlag = stopflag{end};
+end
 searchResults.output.out = out;
 searchResults.output.bestever = bestever;
 searchResults.problemParameters = problemParameters;
