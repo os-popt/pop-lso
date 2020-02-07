@@ -12,7 +12,7 @@ function searchResults = poSepCMAES361(problemParameters, optimizerOptions)
 %   https://sites.google.com/site/ecjlmcma/
 %   https://sites.google.com/site/ecjlmcma/LMCMA_et_al.ZIP?attredirects=0&revision=1
 % Reference:
-%   https://link.springer.xilesou.top/chapter/10.1007/978-3-540-87700-4_30
+%   https://link.springer.com/chapter/10.1007%2F978-3-540-87700-4_30
 % Copyright:
 %   Nikolaus Hansen
 %   http://www.cmap.polytechnique.fr/~nikolaus.hansen/
