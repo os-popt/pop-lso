@@ -87,6 +87,7 @@ while numberEvaluations < maximumEvaluations
     
     numberIterations = numberIterations + 1;
 end
+
 % return final search results
 searchResults.optimalFitness = optimalFitness;
 searchResults.optimalSolution = optimalSolution;
