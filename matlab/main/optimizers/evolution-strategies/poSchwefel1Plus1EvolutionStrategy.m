@@ -54,7 +54,7 @@ while numberEvaluations < maximumEvaluations
         break;
     end
     
-    % adjust step size every `dimension` mutations (via the 1/5 success rule)
+    % adjust step-size every `dimension` mutations (via the 1/5 success rule)
     if (numberEvaluations > 1) && ~rem(numberEvaluations - 1, dimension)
         if numberSuccess > (1 / 5) * dimension
             stepSize = ratioIncrease * stepSize;
