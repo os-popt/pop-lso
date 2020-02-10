@@ -1,5 +1,7 @@
 # Evolutionary Algorithms (EAs)
 
+* Arulkumaran, K., Cully, A. and Togelius, J., 2019, July. Alphastar: An evolutionary computation perspective. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (pp. 314-315). - [pdf](https://dl.acm.org/doi/abs/10.1145/3319619.3321894) -
+
 * Wang, T., Zhou, Y., Fidler, S. and Ba, J., 2019. Neural graph evolution: Towards efficient automatic robot design. International Conference on Learning Representations. - [pdf](https://arxiv.org/pdf/1906.05370.pdf) | [openreview](https://openreview.net/forum?id=BkgWHnR5tm) | [ppt](http://www.cs.toronto.edu/~henryzhou/NGE_website/) |[Python](https://github.com/WilsonWangTHU/neural_graph_evolution) -
 
 * Stanley, K.O., Clune, J., Lehman, J. and Miikkulainen, R., 2019. Designing neural networks through neuroevolution. Nature Machine Intelligence, 1(1), pp.24-35. - [pdf](https://www.nature.com/articles/s42256-018-0006-z) -
