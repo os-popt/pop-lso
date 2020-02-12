@@ -1,12 +1,14 @@
 # Evolution Strategies (ES)
 
-* 2017: [A visual guide to evolution strategies](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/)
+* **Loshchilov, I.**, 2017. LM-CMA: An alternative to L-BFGS for large-scale black box optimization. **Evolutionary Computation**, 25(1), pp.143-171. - [pdf](https://www.mitpressjournals.org/doi/abs/10.1162/EVCO_a_00168) | [MATLAB](https://sites.google.com/site/ecjlmcma/) -
 
-* 2007 (Scholarpedia): [ Evolution strategies](http://www.scholarpedia.org/article/Evolution_strategies)
+* 2017: [**A visual guide to evolution strategies**](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/)
 
-* Ostermeier, A., Gawelczyk, A. and Hansen, N., 1994. A derandomized approach to self-adaptation of evolution strategies. Evolutionary Computation, 2(4), pp.369-380. - [pdf](https://www.mitpressjournals.org/doi/abs/10.1162/evco.1994.2.4.369) -
+* 2007 (Scholarpedia): [**Evolution strategies**](http://www.scholarpedia.org/article/Evolution_strategies)
 
-* Back, T., Hoffmeister, F. and Schwefel, H.P., 1991, July. A survey of evolution strategies. In Proceedings of the Fourth International Conference on Genetic Algorithms (Vol. 2, No. 9). Morgan Kaufmann Publishers San Mateo, CA. - [pdf](http://delta.cs.cinvestav.mx/~ccoello/compevol/strategy.pdf) -
+* Ostermeier, A., Gawelczyk, A. and **Hansen, N.**, 1994. A derandomized approach to self-adaptation of evolution strategies. **Evolutionary Computation**, 2(4), pp.369-380. - [pdf](https://www.mitpressjournals.org/doi/abs/10.1162/evco.1994.2.4.369) -
 
-* Rechenberg, I., 1989. Evolution strategy: Nature’s way of optimization. In Optimization: Methods and applications, possibilities and limitations (pp. 106-126). Springer, Berlin, Heidelberg. - [pdf](https://link.springer.com/chapter/10.1007/978-3-642-83814-9_6) -
+* **Back, T.**, Hoffmeister, F. and **Schwefel, H.P.**, 1991, July. A survey of evolution strategies. In Proceedings of the Fourth International Conference on Genetic Algorithms (Vol. 2, No. 9). Morgan Kaufmann Publishers San Mateo, CA. - [pdf](http://delta.cs.cinvestav.mx/~ccoello/compevol/strategy.pdf) -
+
+* **Rechenberg, I.**, 1989. Evolution strategy: Nature’s way of optimization. In Optimization: Methods and Applications, Possibilities and Limitations (pp. 106-126). Springer, Berlin, Heidelberg. - [pdf](https://link.springer.com/chapter/10.1007/978-3-642-83814-9_6) -
 
