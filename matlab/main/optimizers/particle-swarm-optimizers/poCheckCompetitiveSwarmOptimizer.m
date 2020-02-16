@@ -14,7 +14,6 @@ function [optimizerOptions, ...
 %       3. thresholdFitness   : stopping threshold of the best-so-far fitness, specified as a scalar.
 %                               If no value is specified, then the default is `-Inf`.
 %       4. populationSize     : population size, specified as a positive integer scalar.
-%                               If no value is specified, then the default is `200`.
 %       5. factor             : factor of social learning, specified as a non-negative scalar.
 % Output <-
 %   optimizerOptions : optimizer options, specified as a structure scalar.
