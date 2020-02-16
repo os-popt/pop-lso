@@ -10,9 +10,9 @@ optimizerOptions.maximumRuntime = 60 * problemParameters.dimension; % seconds
 optimizerOptions.thresholdFitness = 1e-10;
 searchResults = poCompetitiveSwarmOptimizer(problemParameters, optimizerOptions);
 disp(searchResults);
-%        optimalFitness: 9.8927e-11
-%     numberEvaluations: 19700
-%      numberIterations: 196
+%        optimalFitness: 7.3047e-11
+%     numberEvaluations: 14300
+%      numberIterations: 285
 %          stoppingFlag: 'thresholdFitness'
 
 %%
@@ -25,9 +25,9 @@ optimizerOptions.maximumRuntime = 60 * problemParameters.dimension; % seconds
 optimizerOptions.thresholdFitness = 1e-10;
 searchResults = poCompetitiveSwarmOptimizer(problemParameters, optimizerOptions);
 disp(searchResults);
-%        optimalFitness: 8.2208e-11
-%     numberEvaluations: 25700
-%      numberIterations: 256
+%        optimalFitness: 9.3381e-11
+%     numberEvaluations: 19150
+%      numberIterations: 382
 %          stoppingFlag: 'thresholdFitness'
 
 %%
@@ -40,7 +40,7 @@ optimizerOptions.maximumRuntime = 60 * problemParameters.dimension; % seconds
 optimizerOptions.thresholdFitness = 1e-10;
 searchResults = poCompetitiveSwarmOptimizer(problemParameters, optimizerOptions);
 disp(searchResults);
-%        optimalFitness: 6.6568
+%        optimalFitness: 0.0084
 %     numberEvaluations: 1000000
-%      numberIterations: 9999
+%      numberIterations: 19999
 %          stoppingFlag: 'maximumEvaluations'

@@ -22,7 +22,7 @@ startTime = tic;
 % load and check optimizer options
 [optimizerOptions, maximumEvaluations, maximumRuntime, ...
     thresholdFitness, populationSize, factor] = ...
-    poCheckCompetitiveSwarmOptimizer(optimizerOptions);
+    poCheckCompetitiveSwarmOptimizer(problemParameters, optimizerOptions);
 numberCouples = populationSize / 2;
 
 % initialize population/particles (i.e., X + V)
