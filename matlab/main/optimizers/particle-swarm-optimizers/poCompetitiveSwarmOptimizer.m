@@ -9,10 +9,11 @@ function searchResults = poCompetitiveSwarmOptimizer(...
 %   searchResults : search results, specified as a structure scalar.
 %
 % Reference:
-%   Cheng, R. and Jin, Y., 2014.
+%   Cheng, R. and Jin, Y., 2015.
 %   A competitive swarm optimizer for large scale optimization.
 %   IEEE Transactions on Cybernetics, 45(2), pp.191-204.
 %   https://ieeexplore.ieee.org/abstract/document/6819057
+%   http://www.soft-computing.de/CSO_Matlab_New.zip
 startTime = tic;
 
 % load and check problem parameters
