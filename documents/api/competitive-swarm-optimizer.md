@@ -8,9 +8,9 @@
 
 * **optimizerOptions**: optimizer options, specified as a structure scalar with the following *six fields*:
 
-  * **maximumEvaluations** : maximum of function evaluations, specified as a positive integer scalar.
+  * **maximumEvaluations**: maximum of function evaluations, specified as a positive integer scalar.
   
-  * **seedPopulation**: random seed for the population initialization, specified as a non-negative scalar.
+  * **seedPopulation**: random seed for the population initialization, specified as a non-negative integer scalar.
   
   * **maximumRuntime**: maximum of allowable runtime (seconds), specified as a positive integer scalar. If no value is specified, then the default is `Inf`.
   
@@ -53,6 +53,8 @@ The code [poCheckCompetitiveSwarmOptimizer.m](https://github.com/os-popt/pop-lso
 ## Description
 
 CSO was proposed by Cheng and Jin, and it was published on [IEEE-TCYB](https://ieeexplore.ieee.org/abstract/document/6819057/) in 2015. Inspired by the particle swarm optimizer, CSO introduced a **pairwise competition mechanism** for large-scale black-box optimization, which is *conceptually very simple*. See [the original IEEE-TCYB paper](https://ieeexplore.ieee.org/abstract/document/6819057/) for more details.
+
+As pointed out in the original paper, generally CSO is not guaranteed to converge to the optimum *even in one-dimensional cases*.
 
 ## Note (Comparing with the Original Implementation)
 
