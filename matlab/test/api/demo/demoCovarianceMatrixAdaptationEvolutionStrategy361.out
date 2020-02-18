@@ -1,0 +1,75 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+#############################################################################
+#              $$$ Enjoy the pure-MATLAB Toolbox <pop-lso> $$$              #
+#                        --- version: 1.00.000.1 ---                        #
+#############################################################################
+******* poSphere :
+  | D2: optimalFitness 3.4196992e-11, runtime 5.8529800e-01, stoppingFlag - fitness.
+  | D10: optimalFitness 8.0873444e-11, runtime 3.0158000e-01, stoppingFlag - fitness.
+  | D100: optimalFitness 6.6018034e-11, runtime 3.3762810e+00, stoppingFlag - fitness.
+  | D1000: optimalFitness 8.9803616e-11, runtime 2.6526227e+01, stoppingFlag - fitness.
+  | D10000: optimalFitness 9.7770624e-11, runtime 4.2176969e+03, stoppingFlag - fitness.
+  $ running and saving time -> 4.2527553e+03 + 4.22123e+00 seconds.
+******* poRosenbrock :
+  | D2: optimalFitness 7.2103863e-12, runtime 1.0941300e-01, stoppingFlag - fitness.
+  | D10: optimalFitness 3.9865791e+00, runtime 4.8494200e-01, stoppingFlag - tolfun.
+  | D100: optimalFitness 8.1158859e-11, runtime 7.1967301e+01, stoppingFlag - fitness.
+  | D1000: optimalFitness 9.3707552e-11, runtime 2.7987523e+03, stoppingFlag - fitness.
+  | D10000: optimalFitness 1.2279755e+04, runtime 4.3206875e+04, stoppingFlag - maximumRuntime.
+  $ running and saving time -> 4.6116697e+04 + 3.85013e+01 seconds.
+******* poSchwefel221 :
+  | D2: optimalFitness 2.6741667e-11, runtime 6.4080000e-02, stoppingFlag - fitness.
+  | D10: optimalFitness 4.7731847e+00, runtime 1.2650000e-02, stoppingFlag - equalfunvals.
+  | D100: optimalFitness 4.9862547e+00, runtime 1.4299000e-02, stoppingFlag - equalfunvals.
+  | D1000: optimalFitness 4.9791096e+00, runtime 4.3608000e-02, stoppingFlag - equalfunvals.
+  | D10000: optimalFitness 4.9991610e+00, runtime 6.5210820e+00, stoppingFlag - equalfunvals.
+  $ running and saving time -> 6.6874410e+00 + 2.59940e-02 seconds.
+******* poEllipsoid :
+  | D2: optimalFitness 2.5021542e-11, runtime 7.8514000e-02, stoppingFlag - fitness.
+  | D10: optimalFitness 6.1505532e-11, runtime 3.8389800e-01, stoppingFlag - fitness.
+  | D100: optimalFitness 9.5622826e-11, runtime 5.3267162e+01, stoppingFlag - fitness.
+  | D1000: optimalFitness 8.8979348e-11, runtime 7.3671378e+01, stoppingFlag - fitness.
+  | D10000: optimalFitness 9.7408725e-11, runtime 3.7119327e+03, stoppingFlag - fitness.
+  $ running and saving time -> 3.8426296e+03 + 3.28945e+00 seconds.
+******* poCigar :
+  | D2: optimalFitness 5.1003449e-12, runtime 7.3026000e-02, stoppingFlag - fitness.
+  | D10: optimalFitness 3.1645727e-11, runtime 3.0498000e-01, stoppingFlag - fitness.
+  | D100: optimalFitness 7.6530471e-11, runtime 7.5818390e+00, stoppingFlag - fitness.
+  | D1000: optimalFitness 8.8674498e-11, runtime 4.5884101e+01, stoppingFlag - fitness.
+  | D10000: optimalFitness 9.7564816e-11, runtime 3.7887760e+03, stoppingFlag - fitness.
+  $ running and saving time -> 3.8466905e+03 + 4.06455e+00 seconds.
+******* poDiscus :
+  | D2: optimalFitness 1.2975299e-11, runtime 5.7393000e-02, stoppingFlag - fitness.
+  | D10: optimalFitness 5.1636286e-11, runtime 2.5951700e-01, stoppingFlag - fitness.
+  | D100: optimalFitness 7.9946572e-11, runtime 1.0812419e+01, stoppingFlag - fitness.
+  | D1000: optimalFitness 8.8221747e-11, runtime 1.8030153e+01, stoppingFlag - fitness.
+  | D10000: optimalFitness 9.7484347e-11, runtime 8.6790699e+02, stoppingFlag - fitness.
+  $ running and saving time -> 8.9805897e+02 + 9.87092e-01 seconds.
+******* poAckley :
+  | D2: optimalFitness 8.8726360e-11, runtime 7.4591000e-02, stoppingFlag - fitness.
+  | D10: optimalFitness 8.4534157e-11, runtime 2.5769400e-01, stoppingFlag - fitness.
+  | D100: optimalFitness 4.3475292e+00, runtime 9.9826820e+00, stoppingFlag - tolfun.
+  | D1000: optimalFitness 6.9864170e+00, runtime 2.6789260e+02, stoppingFlag - tolfun.
+  | D10000: optimalFitness 1.0480770e+01, runtime 2.0211961e+03, stoppingFlag - stagnation.
+  $ running and saving time -> 2.3015847e+03 + 2.17483e+00 seconds.
+******* poGriewank :
+  | D2: optimalFitness 6.7716431e-01, runtime 8.1155000e-02, stoppingFlag - tolfun.
+  | D10: optimalFitness 4.3476395e-02, runtime 2.8989500e-01, stoppingFlag - tolfun.
+  | D100: optimalFitness 7.9058760e-11, runtime 3.6445570e+00, stoppingFlag - fitness.
+  | D1000: optimalFitness 9.6911013e-01, runtime 4.5638269e+01, stoppingFlag - tolfun.
+  | D10000: optimalFitness 9.7436392e-11, runtime 5.0393716e+03, stoppingFlag - fitness.
+  $ running and saving time -> 5.0929870e+03 + 3.95568e+00 seconds.
+******* poRastrigin :
+  | D2: optimalFitness 9.9495906e-01, runtime 7.3231000e-02, stoppingFlag - tolfun.
+  | D10: optimalFitness 2.3878972e+01, runtime 3.1736300e-01, stoppingFlag - tolfun.
+  | D100: optimalFitness 5.4039232e+02, runtime 3.9662230e+00, stoppingFlag - stagnation.
+  | D1000: optimalFitness 1.2390696e+04, runtime 4.1330933e+01, stoppingFlag - stagnation.
+  | D10000: optimalFitness 1.8234434e+05, runtime 2.0476258e+03, stoppingFlag - stagnation.
+  $ running and saving time -> 2.0949180e+03 + 1.59927e+00 seconds.
+$ - runtime - $: 6.8453136e+04 seconds (1.90148E+01 hours).
+$ - script runtime - $: 6.8453160e+04 seconds.
