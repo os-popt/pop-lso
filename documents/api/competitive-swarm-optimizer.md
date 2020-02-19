@@ -4,7 +4,7 @@
 
 ## Input
 
-* **problemParameters** : problem parameters, specified as a structure scalar.
+* **problemParameters**: problem parameters, specified as a structure scalar.
 
 * **optimizerOptions**: optimizer options, specified as a structure scalar with the following *six fields*:
 
