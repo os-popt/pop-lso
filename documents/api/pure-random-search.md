@@ -50,9 +50,11 @@ The code [poCheckPureRandomSearch.m](https://github.com/os-popt/pop-lso/blob/mas
 
 ## Description
 
+PRS adopts the **uniform distribution** to randomly sample in the box-constrained search space.
+
 Arguably, PRS is one of the *oldest* search method for black-box optimization and it is often chosen as a **baseline** for further extensions, improvements, and variations.
 
-Although **No Free Lunch Theorems for Optimization** hold, generally we should not expect that PRS could achieve a *competitive* search performance for many *real-world* large-scale black-box optimization problems, owing to its **sample inefficiency**.
+Although **No Free Lunch Theorems for Optimization** hold under the *uniform* problem distributions assumption, generally we should not expect that PRS could achieve a *competitive* search performance for many *real-world* large-scale black-box optimization problems, owing to its **sample inefficiency**.
 
 ## Example
 
