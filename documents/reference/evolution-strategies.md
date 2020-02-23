@@ -1,5 +1,7 @@
 # Evolution Strategies (ES)
 
+* He, X., Zhou, Y., Chen, Z., Zhang, J. and Chen, W.N., 2019. Large-scale evolution strategy based on search direction adaptation. IEEE Transactions on Cybernetics. - [pdf](https://ieeexplore.ieee.org/abstract/document/8781905) | [MATLAB](https://github.com/hxyokokok/SDAES) -
+
 * **Akimoto, Y.** and **Hansen, N.**, 2019. Diagonal acceleration for covariance matrix adaptation evolution strategies. **Evolutionary Computation**, pp.1-31. - [pdf](https://www.mitpressjournals.org/doi/abs/10.1162/evco_a_00260) | [arxiv](https://arxiv.org/pdf/1905.05885.pdf) | [Python](https://gist.github.com/youheiakimoto/1180b67b5a0b1265c204cba991fa8518) -
 
 * **Loshchilov, I.**, 2017. LM-CMA: An alternative to L-BFGS for large-scale black box optimization. **Evolutionary Computation**, 25(1), pp.143-171. - [pdf](https://www.mitpressjournals.org/doi/abs/10.1162/EVCO_a_00168) | [MATLAB](https://sites.google.com/site/ecjlmcma/) -
