@@ -1,5 +1,5 @@
 function y = poAckleyPF(X)
-% Benchmark Function: Sphere.
+% Benchmark Function: Ackley.
 %
 % Input ->
 %   X : Population, specified as a matrix whose row and column size
