@@ -8,6 +8,8 @@
 
 * 2017: [**A visual guide to evolution strategies**](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/)
 
+* **Hansen, N.**, Atamna, A. and Auger, A., 2014, September. How to assess step-size adaptation mechanisms in randomised search. In International Conference on Parallel Problem Solving from Nature (pp. 60-69). Springer, Cham. - [pdf](https://link.springer.com/chapter/10.1007/978-3-319-10762-2_6) | [hal](https://hal.inria.fr/hal-00997294/document) -
+
 * 2007 (Scholarpedia): [**Evolution strategies**](http://www.scholarpedia.org/article/Evolution_strategies)
 
 * Ostermeier, A., Gawelczyk, A. and **Hansen, N.**, 1994. A derandomized approach to self-adaptation of evolution strategies. **Evolutionary Computation**, 2(4), pp.369-380. - [pdf](https://www.mitpressjournals.org/doi/abs/10.1162/evco.1994.2.4.369) -
