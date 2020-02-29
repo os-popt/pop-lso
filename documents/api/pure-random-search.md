@@ -4,7 +4,19 @@
 
 ## Input
 
-* **problemParameters**: problem parameters, specified as a structure scalar.
+* **problemParameters**: problem parameters, specified as a structure scalar with the following *six fields*:
+
+  * **name**: problem name, specified as a character vector or a string scalar.
+  
+  * **dimension**: problem dimension, specified as a positive integer scalar.
+  
+  * **upperBounds**: upper bounds for all candidate solutions (individuals) *during search*, specified as a column vector of length `dimension`.
+  
+  * **lowerBounds**: lower bounds for all candidate solutions (individuals) *during search*, specified as a column vector of length `dimension`. If no value is specified, then the default is `-upperBounds`.
+  
+  * **initialUpperBounds**: initial upper bounds of individuals *when starting search*, specified as a column vector of length `dimension`. If no value is specified, then the default is `upperBounds`.
+  
+  * **initialLowerBounds**: initial lower bounds of individuals *when starting search*, specified as a column vector of length `dimension`. If no value is specified, then the default is `lowerBounds`.
 
 * **optimizerOptions**: optimizer options, specified as a structure scalar with the following *five fields*:
 
@@ -50,11 +62,11 @@ The code [poCheckPureRandomSearch.m](https://github.com/os-popt/pop-lso/blob/mas
 
 ## Description
 
-PRS adopts the **uniform distribution** to randomly sample in the box-constrained search space.
+PRS adopts the **uniform distribution** to randomly sample all candidate solutions (individuals) in the box-constrained search space.
 
-Arguably, PRS is one of the *oldest* search method for black-box optimization and it is often chosen as a **baseline** for further extensions, improvements, and variations.
+PRS is one of the *oldest* and *simplest* search methods for black-box optimization and it is often chosen as a **baseline** for further extensions, improvements, and variations.
 
-Although **No Free Lunch Theorems for Optimization** hold under the *uniform* problem distributions assumption, generally we should not expect that PRS could achieve a *competitive* search performance for many *real-world* large-scale black-box optimization problems, owing to its **sample inefficiency**.
+Although **No Free Lunch Theorems for Optimization** always hold under the *uniform* problem distributions assumption, generally we should not expect that PRS could achieve a *competitive* search performance for *real-world* large-scale black-box optimization problems, owing to its **sample inefficiency**.
 
 ## Example
 
@@ -80,3 +92,4 @@ toc;
 
 * Brooks, S.H., 1958. A discussion of random methods for seeking maxima. Operations Research, 6(2), pp.244-251. - [pdf](https://pubsonline.informs.org/doi/abs/10.1287/opre.6.2.244) -
 
+* Mania, H., Guy, A. and Recht, B., 2018. Simple random search of static linear policies is competitive for reinforcement learning. In Advances in Neural Information Processing Systems (pp. 1800-1809). - [pdf](http://papers.nips.cc/paper/7451-simple-random-search-of-static-linear-policies-is-competitive-for-reinforcement-learning) -
