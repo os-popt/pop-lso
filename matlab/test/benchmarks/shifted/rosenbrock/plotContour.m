@@ -1,0 +1,9 @@
+clear; clc;
+
+% first, run the script called generateShiftVector.m, which is
+% located in the same directory.
+
+poPlotContour('poShiftedRosenbrock', ...
+    -2 : 0.01 : 2, ...
+    -2 : 0.01 : 2, ...
+    [0 2 .^ (0 : 2 : 20)]);
