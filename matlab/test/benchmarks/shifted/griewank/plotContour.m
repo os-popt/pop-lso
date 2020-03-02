@@ -1,0 +1,9 @@
+clear; clc;
+
+% first, run the script called generateShiftVector.m, which is
+% located in the same directory.
+
+poPlotContour('poShiftedGriewank', ...
+    -5 : 0.05 : 5, ...
+    -5 : 0.05 : 5, ...
+    0 : 0.2 : 2);
