@@ -1,10 +1,22 @@
 # Rechenberg's (1+1)-Evolution Strategy (ES)
 
-**Open source code of Rechenberg's (1+1)-Evolution Strategy**: [poRechenberg1Plus1EvolutionStrategy.m](https://github.com/os-popt/pop-lso/blob/master/matlab/main/optimizers/evolution-strategies/poRechenberg1Plus1EvolutionStrategy.m)
+**Open source code of Rechenberg's (1+1)-Evolution Strategy**: [poRechenberg1Plus1EvolutionStrategy.m](https://github.com/os-popt/pop-lso/blob/master/matlab/main/optimizers/evolution-strategies/rechenberg-1+1-es/poRechenberg1Plus1EvolutionStrategy.m)
 
 ## Input
 
-* **problemParameters**: problem parameters, specified as a structure scalar.
+* **problemParameters**: problem parameters, specified as a structure scalar with the following *six fields*:
+
+  * **name**: problem name, specified as a character vector or a string scalar.
+  
+  * **dimension**: problem dimension, specified as a positive integer scalar.
+  
+  * **upperBounds**: upper bounds for all candidate solutions (individuals) *during search*, specified as a column vector of length `dimension`.
+  
+  * **lowerBounds**: lower bounds for all candidate solutions (individuals) *during search*, specified as a column vector of length `dimension`. If no value is specified, then the default is `-upperBounds`.
+  
+  * **initialUpperBounds**: initial upper bounds of individuals *when starting search*, specified as a column vector of length `dimension`. If no value is specified, then the default is `upperBounds`.
+  
+  * **initialLowerBounds**: initial lower bounds of individuals *when starting search*, specified as a column vector of length `dimension`. If no value is specified, then the default is `lowerBounds`.
 
 * **optimizerOptions**: optimizer options, specified as a structure scalar with the following *five fields*:
 
@@ -16,13 +28,13 @@
   
   * **thresholdFitness**: stopping threshold of the best-so-far fitness, specified as a scalar. If no value is specified, then the default is `-Inf`.
   
-  * **stepSize**: step size for mutation, specified as a non-negative scalar. If no value is specified, then the default is `0.01 * min(upperBounds - lowerBounds)`.
+  * **stepSize**: global step size for mutation, specified as a non-negative scalar. If no value is specified, then the default is `0.01 * min(upperBounds - lowerBounds)`.
 
 At least two optimizer options (i.e., `maximumEvaluations` and `seedPopulation`) should be set **explicitly** while all other optimizer options can be used *by default*.
 
-For Rechenberg's (1+1)-ES, `stepSize` is fixed during the optimization process and no adaptive mechanism is used. In practice, therefore, typically the user needs to fine-tune the setting of `stepSize` for specific optimization problems. For (1+1)-ES, `populationSize` is always set to 1, so the user does not need to set it. Even if set to any other value (not 1) by the user, it will be re-set to 1 by the optimizer itself.
+For Rechenberg's (1+1)-ES, `stepSize` is fixed during the optimization process and no adaptation mechanism is used. Furthermore, only the *global* step size is supported. In practice, typically the user needs to fine-tune `stepSize` for specific optimization problems. For (1+1)-ES, `populationSize` is always set to 1, so the user does not need to set it. Even if set to any other value (not 1) by the user, it will be re-set to 1 implicitly by the optimizer itself.
 
-The code [poCheckRechenberg1Plus1EvolutionStrategy.m](https://github.com/os-popt/pop-lso/blob/master/matlab/main/optimizers/evolution-strategies/poCheckRechenberg1Plus1EvolutionStrategy.m) is used to initialize and check the settings of the above two input parameters (i.e., two structure objects).
+The code [poCheckRechenberg1Plus1EvolutionStrategy.m](https://github.com/os-popt/pop-lso/blob/master/matlab/main/optimizers/evolution-strategies/rechenberg-1+1-es/poCheckRechenberg1Plus1EvolutionStrategy.m) is used to initialize and check the settings of the above two input parameters (i.e., two structure objects).
 
 ## Output
 
@@ -50,7 +62,7 @@ The code [poCheckRechenberg1Plus1EvolutionStrategy.m](https://github.com/os-popt
 
 ## Description
 
-**The canonical (1+1)-ES**, arguably regarded as a kind of *stochastic hill climbing*, was originally proposed by Rechenberg to solve black-box optimization problems, motivated by the biological evolution. In the evolutionary computation community, (1+1)-ES is particularly **of theoretical importance** for the rigorous convergence analysis owing to its simplicity. However, in practice, typically more advanced ES versions (e.g., CMA-ES, LM-CMA, and dd-CMA-ES) are used for large-scale black-box optimization.
+**The canonical (1+1)-ES**, arguably regarded as a kind of *stochastic hill climbing*, was originally proposed by Rechenberg to solve black-box optimization problems, motivated by the biological evolution. For it, only the isotropic spherical normal distribution is used to mutate the single parent. In the evolutionary computation community, (1+1)-ES is particularly **of theoretical importance** for the rigorous convergence analysis owing to its simplicity. However, in practice, typically more advanced ES versions (e.g., CMA-ES, LM-CMA, and dd-CMA-ES) are used for large-scale black-box optimization.
 
 The basic idea of (1+1)-ES is very simple from the implementation perspective. In essence, it is just a *stochastic, iterative* search procedure: first initialize one parent randomly; then generate one offspring via adding normally distributed random noises to the parent (that is, mutation); finally select the better one (parent v.s. offspring) based on their fitness. Repeat the above *comparison-based* search procedure until one of termination criteria is met.
 
