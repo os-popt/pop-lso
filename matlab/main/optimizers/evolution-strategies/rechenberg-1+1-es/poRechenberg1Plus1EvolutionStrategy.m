@@ -1,6 +1,6 @@
 function searchResults = poRechenberg1Plus1EvolutionStrategy(...
     problemParameters, optimizerOptions)
-% Rechenberg's (1+1)-evolution strategy.
+% Rechenberg's (1+1)-Evolution Strategy.
 %
 % Input ->
 %   problemParameters : problem parameters, specified as a structure scalar.
