@@ -1,0 +1,75 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+#############################################################################
+#              $$$ Enjoy the pure-MATLAB Toolbox <pop-lso> $$$              #
+#                        --- version: 1.00.000.1 ---                        #
+#############################################################################
+******* poSphere :
+  | D2: optimalFitness 9.6998719e-11, runtime 5.8552000e-02, stoppingFlag - thresholdFitness.
+  | D10: optimalFitness 9.4841729e-11, runtime 5.9064000e-02, stoppingFlag - thresholdFitness.
+  | D100: optimalFitness 9.7444383e-11, runtime 4.0114500e-01, stoppingFlag - thresholdFitness.
+  | D1000: optimalFitness 9.9869094e-11, runtime 5.0269960e+00, stoppingFlag - thresholdFitness.
+  | D10000: optimalFitness 9.9992921e-11, runtime 2.8141030e+02, stoppingFlag - thresholdFitness.
+  $ running and saving time -> 2.8736016e+02 + 3.46466e-01 seconds.
+******* poRosenbrock :
+  | D2: optimalFitness 9.9968026e-11, runtime 2.3112740e+00, stoppingFlag - thresholdFitness.
+  | D10: optimalFitness 3.9865791e+00, runtime 4.0178452e+01, stoppingFlag - maximumEvaluations.
+  | D100: optimalFitness 9.9996852e-11, runtime 2.8558033e+02, stoppingFlag - thresholdFitness.
+  | D1000: optimalFitness 3.9866239e+00, runtime 7.2809923e+03, stoppingFlag - maximumEvaluations.
+  | D10000: optimalFitness 8.2884275e+03, runtime 4.3200001e+04, stoppingFlag - maximumRuntime.
+  $ running and saving time -> 5.0846192e+04 + 3.71149e+01 seconds.
+******* poSchwefel221 :
+  | D2: optimalFitness 8.3467266e-11, runtime 2.3493000e-02, stoppingFlag - thresholdFitness.
+  | D10: optimalFitness 6.0250500e-01, runtime 4.1639161e+01, stoppingFlag - maximumEvaluations.
+  | D100: optimalFitness 4.2222788e+00, runtime 3.9097058e+02, stoppingFlag - maximumEvaluations.
+  | D1000: optimalFitness 4.5476714e+00, runtime 7.1296239e+03, stoppingFlag - maximumEvaluations.
+  | D10000: optimalFitness 4.8525069e+00, runtime 4.3200001e+04, stoppingFlag - maximumRuntime.
+  $ running and saving time -> 5.0767420e+04 + 5.06064e+00 seconds.
+******* poEllipsoid :
+  | D2: optimalFitness 1.1697812e+01, runtime 7.9449620e+00, stoppingFlag - maximumEvaluations.
+  | D10: optimalFitness 5.5499208e+00, runtime 4.0104264e+01, stoppingFlag - maximumEvaluations.
+  | D100: optimalFitness 8.6071360e+00, runtime 4.8651241e+02, stoppingFlag - maximumEvaluations.
+  | D1000: optimalFitness 7.2778970e+01, runtime 1.2636454e+04, stoppingFlag - maximumEvaluations.
+  | D10000: optimalFitness 2.3253656e+04, runtime 4.3200000e+04, stoppingFlag - maximumRuntime.
+  $ running and saving time -> 5.6416263e+04 + 4.51184e+01 seconds.
+******* poCigar :
+  | D2: optimalFitness 1.5435092e+01, runtime 6.8285910e+00, stoppingFlag - maximumEvaluations.
+  | D10: optimalFitness 4.7699747e+00, runtime 3.5223703e+01, stoppingFlag - maximumEvaluations.
+  | D100: optimalFitness 2.8327685e+00, runtime 3.7907844e+02, stoppingFlag - maximumEvaluations.
+  | D1000: optimalFitness 9.5123306e-01, runtime 5.5628331e+03, stoppingFlag - maximumEvaluations.
+  | D10000: optimalFitness 8.9049226e-01, runtime 4.3200000e+04, stoppingFlag - maximumRuntime.
+  $ running and saving time -> 4.9230161e+04 + 4.60967e+01 seconds.
+******* poDiscus :
+  | D2: optimalFitness 8.7560658e-01, runtime 6.8726690e+00, stoppingFlag - maximumEvaluations.
+  | D10: optimalFitness 4.9779652e+00, runtime 3.5996972e+01, stoppingFlag - maximumEvaluations.
+  | D100: optimalFitness 1.9458938e-09, runtime 3.8168161e+02, stoppingFlag - maximumEvaluations.
+  | D1000: optimalFitness 9.9999198e-11, runtime 6.8819864e+02, stoppingFlag - thresholdFitness.
+  | D10000: optimalFitness 9.9999736e-11, runtime 4.3360410e+03, stoppingFlag - thresholdFitness.
+  $ running and saving time -> 5.4575707e+03 + 8.67301e+00 seconds.
+******* poAckley :
+  | D2: optimalFitness 2.5799276e+00, runtime 6.9819170e+00, stoppingFlag - maximumEvaluations.
+  | D10: optimalFitness 7.6160836e+00, runtime 3.5185320e+01, stoppingFlag - maximumEvaluations.
+  | D100: optimalFitness 7.2718367e+00, runtime 4.1633320e+02, stoppingFlag - maximumEvaluations.
+  | D1000: optimalFitness 6.4467456e+00, runtime 1.2726998e+04, stoppingFlag - maximumEvaluations.
+  | D10000: optimalFitness 5.8133016e+00, runtime 4.3200000e+04, stoppingFlag - maximumRuntime.
+  $ running and saving time -> 5.6390866e+04 + 5.34571e+00 seconds.
+******* poGriewank :
+  | D2: optimalFitness 2.9893976e-11, runtime 1.5698000e-02, stoppingFlag - thresholdFitness.
+  | D10: optimalFitness 7.3960403e-03, runtime 4.4154707e+01, stoppingFlag - maximumEvaluations.
+  | D100: optimalFitness 9.9303898e-11, runtime 6.2869000e-01, stoppingFlag - thresholdFitness.
+  | D1000: optimalFitness 9.9940500e-11, runtime 1.6525140e+01, stoppingFlag - thresholdFitness.
+  | D10000: optimalFitness 9.9989239e-11, runtime 3.7935676e+02, stoppingFlag - thresholdFitness.
+  $ running and saving time -> 4.4109268e+02 + 3.09492e-01 seconds.
+******* poRastrigin :
+  | D2: optimalFitness 1.9899181e+00, runtime 7.3634500e+00, stoppingFlag - maximumEvaluations.
+  | D10: optimalFitness 6.6661959e+01, runtime 3.4015793e+01, stoppingFlag - maximumEvaluations.
+  | D100: optimalFitness 6.1985672e+02, runtime 4.0443528e+02, stoppingFlag - maximumEvaluations.
+  | D1000: optimalFitness 5.7219858e+03, runtime 1.2200681e+04, stoppingFlag - maximumEvaluations.
+  | D10000: optimalFitness 5.2146593e+04, runtime 4.3200000e+04, stoppingFlag - maximumRuntime.
+  $ running and saving time -> 5.5851530e+04 + 5.02912e+00 seconds.
+$ - runtime - $: 3.2568859e+05 seconds (9.04691E+01 hours).
+$ - script runtime - $: 3.2568870e+05 seconds.
