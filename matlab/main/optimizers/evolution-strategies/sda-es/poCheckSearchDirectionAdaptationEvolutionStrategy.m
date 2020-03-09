@@ -55,7 +55,7 @@ end
 
 % numberSearchDirections
 if ~isfield(optimizerOptions, 'numberSearchDirections')
-    optimizerOptions.numberSearchDirections = 10;
+    optimizerOptions.numberSearchDirections = min(dimension, 10);
 end
 numberSearchDirections = optimizerOptions.numberSearchDirections;
 if ~poIsPositiveIntegerScalar(numberSearchDirections)
