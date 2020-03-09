@@ -21,7 +21,7 @@ function [optimizerOptions, ...
 %                                   If no value is specified, then the default is
 %                                   `0.01 * min(upperBounds - lowerBounds)`.
 %       6. numberSearchDirections : number of search directions, specified as a positive integer scalar.
-%                                   If no value is specified, then the default is `10`.
+%                                   If no value is specified, then the default is `min(dimension, 10)`.
 % Output <-
 %   optimizerOptions : optimizer options, specified as a structure scalar.
 
