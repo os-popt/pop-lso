@@ -4,6 +4,8 @@
 
 * **Akimoto, Y.** and **Hansen, N.**, 2019. Diagonal acceleration for covariance matrix adaptation evolution strategies. **Evolutionary Computation**, pp.1-31. - [pdf](https://www.mitpressjournals.org/doi/abs/10.1162/evco_a_00260) | [arxiv](https://arxiv.org/pdf/1905.05885.pdf) | [Python](https://gist.github.com/youheiakimoto/1180b67b5a0b1265c204cba991fa8518) -
 
+* Li, Z. and Zhang, Q., 2017. A simple yet efficient evolution strategy for large-scale black-box optimization. **IEEE Transactions on Evolutionary Computation**, 22(5), pp.637-646. - [pdf](https://ieeexplore.ieee.org/abstract/document/8080257) -
+
 * **Loshchilov, I.**, 2017. LM-CMA: An alternative to L-BFGS for large-scale black box optimization. **Evolutionary Computation**, 25(1), pp.143-171. - [pdf](https://www.mitpressjournals.org/doi/abs/10.1162/EVCO_a_00168) | [MATLAB](https://sites.google.com/site/ecjlmcma/) -
 
 * 2017: [**A visual guide to evolution strategies**](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/)
