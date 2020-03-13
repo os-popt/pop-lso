@@ -2,7 +2,7 @@ clear; clc;
 
 %%
 rng(1);
-opt.x0 = -10 + 20 * rand(10, 1);
+opt.x0 = unifrnd(-10 * ones(10, 1), 10 * ones(10, 1));
 opt.sigma0 = 0.2;
 opt.stopfitness = 1e-10;
 opt.maxFEs = 1e6;
@@ -16,7 +16,7 @@ disp(out.record(end, 1)); % 1881
 
 %%
 rng(2);
-opt.x0 = -10 + 20 * rand(10, 1);
+opt.x0 = unifrnd(-10 * ones(10, 1), 10 * ones(10, 1));
 opt.sigma0 = 0.2;
 opt.stopfitness = 1e-10;
 opt.maxFEs = 1e6;
@@ -25,12 +25,12 @@ opt.stoptime = 600;
 opt.verbose = 0;
 rng(202002);
 out = SDAES(@poEllipsoid, 10, opt);
-disp(out.bestFitness); % 9.9324e-11
-disp(out.record(end, 1)); % 120591
+disp(out.bestFitness); % 9.9855e-11
+disp(out.record(end, 1)); % 156951
 
 %%
 rng(3);
-opt.x0 = -10 + 20 * rand(10, 1);
+opt.x0 = unifrnd(-10 * ones(10, 1), 10 * ones(10, 1));
 opt.sigma0 = 0.2;
 opt.stopfitness = 1e-10;
 opt.maxFEs = 1e6;
