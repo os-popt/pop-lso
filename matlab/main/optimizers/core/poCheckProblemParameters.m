@@ -27,9 +27,9 @@ end
 if ~isfield(problemParameters, 'name')
     error('`name` should be a field of the input `problemParameters`.');
 end
-if ~poIsProblemName(problemParameters.name)
-    error('`name` should be a character vector or a string scalar.');
-end
+% if ~poIsProblemName(problemParameters.name)
+%     error('`name` should be a character vector or a string scalar.');
+% end
 
 % dimension
 if ~isfield(problemParameters, 'dimension')

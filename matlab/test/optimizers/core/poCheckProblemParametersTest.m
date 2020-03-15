@@ -27,10 +27,10 @@ problemParameters = {};
 problemParameters.dimension = 2;
 poCheckProblemParameters(problemParameters);
 
-%% `name` should be a character vector or a string scalar.
-problemParameters = {};
-problemParameters.name = [];
-poCheckProblemParameters(problemParameters);
+% %% `name` should be a character vector or a string scalar.
+% problemParameters = {};
+% problemParameters.name = [];
+% poCheckProblemParameters(problemParameters);
 
 %% `dimension` should be a field of the input `problemParameters`.
 problemParameters = {};
