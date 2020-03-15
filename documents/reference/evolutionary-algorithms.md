@@ -18,3 +18,4 @@
 
 * Eiben, A.E. and Smith, J.E., 2015. Introduction to evolutionary computing. Second Edition. Springer. - [pdf](https://link.springer.com/book/10.1007/978-3-662-44874-8) -
 
+* Gomez, F., Schmidhuber, J. and Miikkulainen, R., 2008. Accelerated neural evolution through cooperatively coevolved synapses. Journal of Machine Learning Research, 9(May), pp.937-965. - [pdf](http://www.jmlr.org/papers/volume9/gomez08a/gomez08a.pdf) -
