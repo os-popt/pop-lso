@@ -16,3 +16,9 @@ for d = 1 : length(dimensions)
     optimizerOption.numberElements = 3;
     optimizerOptions{d} = poCyclicDecomposition(problemParameters, optimizerOption);
 end
+
+%%
+problemParameters.dimension = 2;
+optimizerOption.numberElements = 3;
+optimizerOptions = poCyclicDecomposition(problemParameters, optimizerOption);
+disp(optimizerOptions.partitionSet'); % [1] [2]

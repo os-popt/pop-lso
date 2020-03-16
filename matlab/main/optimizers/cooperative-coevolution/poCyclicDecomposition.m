@@ -28,5 +28,10 @@ for p = 1 : length(partitionSet)
     indexes = (1 + (p - 1) * numberElements) : min(dimension, p * numberElements);
     partitionSet{p, 1} = dimensionIndex(indexes);
 end
-optimizerOptions.partitionSet = partitionSet;
+
+if dimension == 2 % for the special case
+    optimizerOptions.partitionSet = {1; 2};
+else
+    optimizerOptions.partitionSet = partitionSet;
+end
 end
