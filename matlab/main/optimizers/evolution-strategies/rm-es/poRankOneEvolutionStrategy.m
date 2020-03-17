@@ -16,7 +16,7 @@ function searchResults = poRankOneEvolutionStrategy(...
 startTime = tic;
 
 % load and check problem parameters
-[problemParameters, name, dimension] = ...
+[problemParameters, name, dimension, upperBounds, lowerBounds] = ...
     poCheckProblemParameters(problemParameters);
 
 % load and check optimizer options
@@ -74,6 +74,13 @@ while numberEvaluations < maximumEvaluations
     X = sqrt(1 - ccov) * randn(dimension, ceil(populationSize / 2)) + ...
         sqrt(ccov) * p * randn(1, ceil(populationSize / 2));
     X = xMean + stepSize * [X -X(:, 1 : floor(populationSize / 2))];
+    
+    for k = 1 : populationSize
+        outOfBound = (X(:, k) > upperBounds) | (X(:, k) < lowerBounds);
+        if any(outOfBound)
+            X(outOfBound, k) = unifrnd(lowerBounds(outOfBound), upperBounds(outOfBound));
+        end
+    end
     
     % evaluate fitness of new samples (i.e., y)
     startEvaluations = tic;

@@ -12,7 +12,7 @@ rng(optimizerOptions.seedOptimization);
 searchResults = poRankOneEvolutionStrategy(...
     problemParameters, optimizerOptions);
 disp(searchResults);
-%        optimalFitness: 6.1294e-11
+%        optimalFitness: 9.2584e-11
 %     numberEvaluations: 1741
 
 %%
@@ -27,8 +27,8 @@ rng(optimizerOptions.seedOptimization);
 searchResults = poRankOneEvolutionStrategy(...
     problemParameters, optimizerOptions);
 disp(searchResults);
-%        optimalFitness: 9.9466e-11
-%     numberEvaluations: 171711
+%        optimalFitness: 9.9977e-11
+%     numberEvaluations: 174661
 
 %%
 problemParameters = poSetProblemParameters('poRosenbrock', 10, 10);
@@ -42,5 +42,5 @@ rng(optimizerOptions.seedOptimization);
 searchResults = poRankOneEvolutionStrategy(...
     problemParameters, optimizerOptions);
 disp(searchResults);
-%        optimalFitness: 9.1893e-11
-%     numberEvaluations: 16761
+%        optimalFitness: 9.5505e-11
+%     numberEvaluations: 15001
