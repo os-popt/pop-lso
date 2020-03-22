@@ -1,5 +1,7 @@
 # Evolutionary Algorithms (EAs)
 
+* Thrun, M.C. and Ultsch, A., 2020. Swarm intelligence for self-organized clustering. Artificial Intelligence, p.103237. - [pdf](https://www.sciencedirect.com/science/article/abs/pii/S0004370220300047) | [R](https://github.com/Mthrun/DatabionicSwarm) -
+
 * Khadka, S., Majumdar, S., Miret, S., Tumer, E., Nassar, T., Dwiel, Z., Liu, Y. and Tumer, K., 2019. Collaborative evolutionary reinforcement learning. Proceedings of the 36th International Conference on Machine Learning (pp. 3341-3350). - [pdf](http://proceedings.mlr.press/v97/khadka19a/khadka19a.pdf) | [www](http://proceedings.mlr.press/v97/khadka19a.html) | [Python](https://github.com/IntelAI/cerl) -
 
 * Ha, D., 2019. Reinforcement learning for improving agent design. Artificial Life, 25(4), pp.352-365. - [pdf](https://www.mitpressjournals.org/doi/pdf/10.1162/artl_a_00301) | [www](https://designrl.github.io) | [Python](https://github.com/hardmaru/astool) -
