@@ -12,6 +12,8 @@
 
 * 2017: [**A visual guide to evolution strategies**](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/)
 
+* **Hansen, N.**, Arnold, D.V. and Auger, A., 2015. Evolution strategies. In Springer Handbook of Computational Intelligence (pp. 871-898). Springer, Berlin, Heidelberg. - [pdf](https://link.springer.com/chapter/10.1007/978-3-662-43505-2_44) | [hal](https://hal.inria.fr/hal-01155533/document) -
+
 * **Hansen, N.**, Atamna, A. and Auger, A., 2014, September. How to assess step-size adaptation mechanisms in randomised search. In International Conference on Parallel Problem Solving from Nature (pp. 60-69). Springer, Cham. - [pdf](https://link.springer.com/chapter/10.1007/978-3-319-10762-2_6) | [hal](https://hal.inria.fr/hal-00997294/document) -
 
 * 2007 (Scholarpedia): [**Evolution strategies**](http://www.scholarpedia.org/article/Evolution_strategies)
