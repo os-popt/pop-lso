@@ -2,9 +2,9 @@ function poAutomaticallyCheckBenchmark(name, start2)
 % Automatically check the benchmark function.
 %
 % Input ->
-%   name : Function name, specified as a character vector or a string scalar.
+%   name   : Function name, specified as a character vector or a string scalar.
 %   start2 : Whether or not the dimension starts from 2, specified as a boolean scalar.
-%            If no value is specified, then the default is false
+%            If no value is specified, then the default is false.
 if nargin < 2
     start2 = false;
 end
