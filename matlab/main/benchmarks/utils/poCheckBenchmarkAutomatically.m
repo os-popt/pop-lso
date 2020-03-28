@@ -1,15 +1,21 @@
-function TF = poCheckBenchmarkAutomatically(name, tol)
+function TF = poCheckBenchmarkAutomatically(name, tol, start2)
 % Check the benchmark function automatically via sampling.
 %
 % Input ->
-%   name : Function name, specified as a character vector or a string scalar.
-%   tol  : Comparison tolerance, specified as a non-negative scalar.
-%          If no value is specified, then the default is 1e-12.
+%   name   : Function name, specified as a character vector or a string scalar.
+%   tol    : Comparison tolerance, specified as a non-negative scalar.
+%            If no value is specified, then the default is 1e-12.
+%   start2 : Whether or not the dimension starts from 2, specified as a boolean scalar.
+%            If no value is specified, then the default is false.
 % Output <-
 %   TF : Returns logical 1 (true) if pass the checking within the toleration.
 %        Otherwise, it returns logical 0 (false).
 if ~poIsProblemName(name)
     error('the input `name` should be a character vector or a string scalar.');
+end
+
+if nargin < 3
+    start2 = false;
 end
 
 if nargin < 2
@@ -24,7 +30,17 @@ functions = {name, ... % accept the funcDim-by-popSize matrix as input
 
 numSamping = 200;
 for s = 1 : numSamping
-    X = unifrnd(-5, 5, randi(1000, [1 2]));
+    if s < 199
+        if start2
+            X = unifrnd(-5, 5, randi([2 100], [1 2]));
+        else
+            X = unifrnd(-5, 5, randi(100, [1 2]));
+        end
+    elseif s == 199
+        X = unifrnd(-5, 5, [1e3, randi(1000)]);
+    elseif s == 200
+        X = unifrnd(-5, 5, [1e4, randi(1000)]);
+    end
     [~, popSize] = size(X);
     y = feval(name, X);
     for fi = 2 : length(functions)
