@@ -69,6 +69,11 @@ while numberEvaluations < maximumEvaluations
         break;
     end
     
+    if stepSize <= 1e-15
+        stoppingFlag = 'stepSize';
+        break;
+    end
+    
     % generate mutated samples (i.e., X) via mirroring,
     %   which is different from the original paper
     X = sqrt(1 - ccov) * randn(dimension, ceil(populationSize / 2)) + ...
