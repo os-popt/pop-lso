@@ -16,6 +16,8 @@
 
 * **Hansen, N.**, Atamna, A. and Auger, A., 2014, September. How to assess step-size adaptation mechanisms in randomised search. In International Conference on Parallel Problem Solving from Nature (pp. 60-69). Springer, Cham. - [pdf](https://link.springer.com/chapter/10.1007/978-3-319-10762-2_6) | [hal](https://hal.inria.fr/hal-00997294/document) -
 
+* **Hansen, N.**, Ros, R., Mauny, N., Schoenauer, M. and Auger, A., 2011. Impacts of invariance in search: When CMA-ES and PSO face ill-conditioned and non-separable problems. Applied Soft Computing, 11(8), pp.5755-5769. - [pdf](https://www.sciencedirect.com/science/article/abs/pii/S1568494611000974) -
+
 * 2007 (Scholarpedia): [**Evolution strategies**](http://www.scholarpedia.org/article/Evolution_strategies)
 
 * Knight, J.N. and Lunacek, M., 2007, July. Reducing the space-time complexity of the CMA-ES. In Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation (pp. 658-665). - [pdf](https://dl.acm.org/doi/abs/10.1145/1276958.1277097) -
