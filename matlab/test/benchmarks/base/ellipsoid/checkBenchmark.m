@@ -36,7 +36,7 @@ poManuallyCheckBenchmark(funcName, X, y);
 
 %%
 tic;
-poAutomaticallyCheckBenchmark(funcName);
+poAutomaticallyCheckBenchmark(funcName, true);
 toc;
 
 %%
@@ -46,4 +46,4 @@ toc;
 % poEllipsoid : NOT pass the manual checking within the tolerance `1.00e-01`.
 % poEllipsoid : NOT pass the manual checking within the tolerance `1.00e-01`.
 % poEllipsoid : pass the manual checking within the tolerance `1.00e-12`.
-% poEllipsoid : pass the automatic checking within the tolerance `1.00e-06`.
+% poEllipsoid : pass the automatic checking within the tolerance `1.00e-03`.
