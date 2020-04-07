@@ -10,9 +10,9 @@ function poPlotContour(name, x, y, levels)
 %
 % Reference:
 %   https://www.mathworks.com/help/matlab/ref/contourf.html
-if ~poIsProblemName(name)
-    error('the input `name` should be a character vector or a string scalar.');
-end
+% if ~poIsProblemName(name)
+%     error('the input `name` should be a character vector or a string scalar.');
+% end
 
 if ~isvector(x) || ~isnumeric(x)
     error('the input `x` should be a vector.');
@@ -57,8 +57,12 @@ else
         'EdgeColor', 'white', 'LineWidth', 1.75);
 end
 colormap(cool);
-title(name);
+if ~isa(name, 'function_handle')
+    title(name);
+end
 xlabel('x_1');
 ylabel('x_2');
-savefig(sprintf('poPlotContour-%s.fig', name));
+if ~isa(name, 'function_handle')
+    savefig(sprintf('poPlotContour-%s.fig', name));
+end
 end
