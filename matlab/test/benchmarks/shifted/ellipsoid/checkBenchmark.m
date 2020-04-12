@@ -39,7 +39,7 @@ poManuallyCheckBenchmark(funcName, X, y, true);
 
 %%
 tic;
-poAutomaticallyCheckBenchmark(funcName);
+poAutomaticallyCheckBenchmark(funcName, true);
 toc;
 
 %%
