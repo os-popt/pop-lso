@@ -8,3 +8,5 @@
 
 * Jansen, T. and Wiegand, R.P., 2003, July. Exploring the explorative advantage of the cooperative coevolutionary (1+1) EA. In Genetic and Evolutionary Computation Conference (pp. 310-321). Springer, Berlin, Heidelberg. - [pdf](https://link.springer.com/chapter/10.1007/3-540-45105-6_37) -
 
+* Wiegand, R.P., Liles, W.C. and De Jong, K.A., 2002, May. Analyzing cooperative coevolution with evolutionary game theory. In IEEE Congress on Evolutionary Computation (pp. 1600-1605). IEEE. - [pdf](https://ieeexplore.ieee.org/abstract/document/1004481) -
+
